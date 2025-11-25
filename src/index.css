@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* Google Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+
+
+
+/* Apply Poppins to entire website */
+body, html, #root {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+
+/* small helpers for popup absolute positioning */
+header .miniPopup {
+  position: absolute;
+  transform: translateY(6px);
+}
+
+header .miniPopup-emergency {
+  left: 1rem;
+  top: 48px;
+  width: 260px;
+}
+
+header .miniPopup-departments {
+  right: 120px;
+  top: 48px;
+}
+
+
+/*header dropdown hover color i    */
+.navbar-nav > .nav__item > .nav__item-link {
+  color: #283B6A !important;       
+  transition: color 180ms ease-in-out;
+}
+
+
+.navbar-nav > .nav__item > .nav__item-link:hover,
+.navbar-nav > .nav__item > .nav__item-link:focus {
+  color: #21CDC0 !important;         
+}
+
+
+.navbar-nav > .nav__item > .nav__item-link.active,
+.navbar-nav > .nav__item > .nav__item-link[aria-current="page"] {
+  color: #21CDC0 !important;
+}
+
+
+.miniPopup-departments-trigger .font-medium {
+  color: #283B6A !important;
+  transition: color 180ms ease-in-out;
+}
+.miniPopup-departments-trigger:hover .font-medium,
+.miniPopup-departments-trigger:focus .font-medium {
+  color: #21CDC0 !important;
+}
+
+
+.miniPopup-departments-trigger .menu-lines span {
+  background-color: #283B6A;
+}
+.miniPopup-departments-trigger:hover .menu-lines span,
+.miniPopup-departments-trigger:focus .menu-lines span {
+  background-color: #21CDC0;
+}
+
+/* optional: smoother overlay transition */
+.sidebar-overlay {
+  transition: opacity .18s ease;
+}
+
+aside::-webkit-scrollbar {
+  width: 8px;
+}
+aside::-webkit-scrollbar-thumb {
+  background: rgba(37, 99, 235, 0.12);
+  border-radius: 10px;
+}
